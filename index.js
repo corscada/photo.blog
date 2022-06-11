@@ -22,8 +22,8 @@ const images = getImageData(config.gallery);
 app.get('/', (req, res) => {
   res.render('gallery', { 
     layout: 'default',
-    config: config,
-    images: images,
+    config,
+    images,
   })
 })
 
