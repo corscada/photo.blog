@@ -2,17 +2,48 @@
 /* General                                                                       */
 /*********************************************************************************/
 
+p {
+  width: 70ch;
+}
+
+.button {
+  display: block;
+  width: 20em;
+  max-width: 100%;
+  padding: 1em 2em;
+  font-weight: 500;
+  border-radius: .3em;
+  background-color: #4a7;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.repo {
+  background-color: #567;
+  margin: auto;
+  margin-top: 5ch;
+}
+
 .title {
   text-align: center;
 }
 
 .license {
   text-align: center;
+  margin: auto;
+  margin-top: 5ch;
 }
 
 /*********************************************************************************/
 /* Gallery                                                                       */
 /*********************************************************************************/
+
+.bio {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5ch;
+}
 
 .photogrid {
   display: flex;
@@ -58,6 +89,3 @@
   margin-right: 2ch;
 }
 
-.photo p {
-  width: 70ch;
-}
