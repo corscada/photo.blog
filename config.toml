@@ -3,8 +3,8 @@ name = ""
 bio = ""
 
 [site]
-title = ""
+title = "" 
 
 [gallery]
-order = "" # reverse/random, default: oldest-newest
-limit = 100
+order = ""            # reverse/random, default: oldest-newest
+# limit = 100         # number of photos to be shown, default: 100

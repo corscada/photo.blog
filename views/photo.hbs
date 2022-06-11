@@ -1,0 +1,10 @@
+<div class="photo">
+  <img alt="{{image.alt}}" src="/images/{{image.fileName}}.{{image.fileType}}"/>
+  <h1>{{image.title}}</h1>
+  <h3>
+    {{image.camera}}
+    {{#if image.camera}}{{#if image.lens}},{{/if}}{{/if}}
+     {{image.lens}}
+  </h3>
+  <p>{{image.text}}</p>
+</div>

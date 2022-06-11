@@ -24,7 +24,15 @@ app.get('/', (req, res) => {
     layout: 'default',
     config,
     images,
-  })
+  });
+})
+
+app.get('/:photo' , (req, res) =>{
+  res.render('photo', {
+    layout: 'default',
+    config,
+    image: images.find(image => image.url === req.params.photo),
+  });
 })
 
 app.listen(3000)

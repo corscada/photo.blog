@@ -39,3 +39,25 @@
   transform:scale(0.98);
   transition-duration: .5s;
 }
+
+/*********************************************************************************/
+/* Photo                                                                         */
+/*********************************************************************************/
+
+.photo {
+  margin: auto;
+  width: 80%;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.photo h1,h3 {
+  display: inline-block;
+  margin-right: 2ch;
+}
+
+.photo p {
+  width: 70ch;
+}

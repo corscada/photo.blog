@@ -1,3 +1,4 @@
+const urlSlug = require('url-slug');
 require('toml-require').install({toml: require('toml')});
 
 exports.getServerConfig = () =>  {
@@ -16,6 +17,8 @@ exports.getImageConfig = (name, type) => {
   const config = require(`../public/images/${name}.toml`);
   config.fileName = name;
   config.fileType = type;
+  config.title = config.title ? config.title : config.fileName;
+  config.url = urlSlug.convert(config.title);
 
   if (config.alt) return config;
   else throw Error(`alt text required for ${name}`);

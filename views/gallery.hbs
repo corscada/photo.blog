@@ -1,7 +1,9 @@
 <div class="photogrid">
 {{#each images}}
   <div class="img-container">
-    <img src="/images/{{this.fileName}}.{{this.fileType}}"/>
+    <a href="{{this.url}}">
+      <img alt="{{this.alt}}" src="/images/{{this.fileName}}.{{this.fileType}}"/>
+    </a>
   </div>
 {{/each}}
 </div>
