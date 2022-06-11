@@ -1,0 +1,25 @@
+{
+  "name": "photo.blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corscada/photo.blog.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/corscada/photo.blog/issues"
+  },
+  "homepage": "https://github.com/corscada/photo.blog#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "toml": "^3.0.0",
+    "toml-require": "^1.2.0"
+  }
+}

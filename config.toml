@@ -1,0 +1,10 @@
+[owner]
+name = ""
+bio = ""
+
+[site]
+title = ""
+
+[gallery]
+order = "" # reverse/random, default: oldest-newest
+limit = 100
