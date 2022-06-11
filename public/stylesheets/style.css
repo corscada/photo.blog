@@ -3,7 +3,7 @@
 /*********************************************************************************/
 
 p {
-  width: 70ch;
+  width: clamp(45ch, 80%, 75ch);
 }
 
 .button {
@@ -33,6 +33,9 @@ p {
   text-align: center;
   margin: auto;
   margin-top: 5ch;
+}
+
+@media only screen and (max-width: 550px) {
 }
 
 /*********************************************************************************/
@@ -71,13 +74,18 @@ p {
   transition-duration: .5s;
 }
 
+@media only screen and (max-width: 550px) {
+  .photogrid {
+    flex-direction: column;
+  }
+}
 /*********************************************************************************/
 /* Photo                                                                         */
 /*********************************************************************************/
 
 .photo {
   margin: auto;
-  width: 80%;
+  width: 100ch;
 }
 
 .photo img {
