@@ -35,9 +35,6 @@ p {
   margin-top: 5ch;
 }
 
-@media only screen and (max-width: 550px) {
-}
-
 /*********************************************************************************/
 /* Gallery                                                                       */
 /*********************************************************************************/
@@ -62,8 +59,8 @@ p {
 }
 
 .photogrid img {
-  max-height: 100%;
   min-width: 100%;
+  max-height: 100%;
   object-fit: cover;
   vertical-align: bottom;
 }
@@ -74,9 +71,14 @@ p {
   transition-duration: .5s;
 }
 
-@media only screen and (max-width: 550px) {
-  .photogrid {
-    flex-direction: column;
+@media only screen and (max-width: 750px) {
+  p, .button {
+    width: auto;
+  }
+
+  .photogrid img {
+    height: 40vh;
+    width: 100%;
   }
 }
 /*********************************************************************************/
